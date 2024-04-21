@@ -8,7 +8,7 @@ Aucune modification de l'application n'est nécessaire, uniquement des modificat
 
 - Créez un compte Gitlab.com.
 - Créez un nouveau projet, et avec Git, poussez l'application.
-- Créez un fichier .gitlab-ci.yml depuis l'inteface web de Gitlab et choisissez un template Docker. Regardez le contenu du template.
+- Créez un fichier .gitlab-ci.yml depuis l'inteface web de Gitlab (Build>Pipeline editor) et choisissez un template Docker. Regardez le contenu du template.
 - Imaginez qu'un autre développeur vous ait donné les instructions ci-dessous pour créer le conteneur : construisez le dockerfile associé, faites des commits, et observez le comportement de la pipeline de CICD.
 - Télécharger l'image créée sur le Container Registry Gitlab, et vérifiez que l'image se lance bien.
 
