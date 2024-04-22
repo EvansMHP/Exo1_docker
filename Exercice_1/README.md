@@ -19,7 +19,7 @@ Aucune modification de l'application n'est nécessaire, uniquement des modificat
 - Cette application écoute sur le port 3000, mais le conteneur doit écouter sur le port 80 de l'hôte Docker, il répondra donc à [http://localhost:80](http://localhost:80) sur votre ordinateur
 - Ensuite, il doit utiliser le gestionnaire de paquets alpine pour installer tini : `apk add --no-cache tini`.
 - Ensuite, il doit créer le répertoire /usr/src/app pour les fichiers d'application avec `mkdir -p /usr/src/app`, ou avec la commande Dockerfile `WORKDIR /usr/src/app`.
-- Node.js utilise un "gestionnaire de packages", il doit donc être copié dans le fichier package.json.
+- Node.js utilise un "gestionnaire de packages", copiez le fichier package.json dans le conteneur.
 - Ensuite, il doit exécuter 'npm install' pour installer les dépendances de ce fichier.
 - Pour le garder propre et petit, exécutez `npm cache clean --force` après ce qui précède, dans la même commande RUN.
 - Ensuite, il doit copier tous les fichiers du répertoire actuel dans l'image.
